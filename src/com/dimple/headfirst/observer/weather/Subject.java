@@ -1,4 +1,4 @@
-package com.dimple.headfirst.observer;
+package com.dimple.headfirst.observer.weather;
 
 public interface Subject {
 	// 注册观察者对象

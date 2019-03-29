@@ -1,4 +1,4 @@
-package com.dimple.headfirst.observer;
+package com.dimple.headfirst.observer.weather;
 
 import java.util.ArrayList;
 

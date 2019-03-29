@@ -1,4 +1,4 @@
-package com.dimple.headfirst.observer;
+package com.dimple.headfirst.observer.weather;
 
 /**
  * 
@@ -6,13 +6,13 @@ package com.dimple.headfirst.observer;
  * @Description: 实现Observer接口，所以可以从WeatherData对象中获得改变
  * 也实现了DisplayElement接口，因为我们的API规定所有布告板都必须实现此接口
  */
-public class CurrentConditionDisplay implements Observer, DisplayElement {
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	
 	private float temperature;
 	private float humidity;
 	private Subject weatherData;
 	
-	public CurrentConditionDisplay(Subject weatherData) {
+	public CurrentConditionsDisplay(Subject weatherData) {
 		this.weatherData = weatherData;
 		weatherData.registerObserver(this);
 	}
